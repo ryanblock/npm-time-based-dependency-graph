@@ -1,9 +1,11 @@
 # Steps to reproduce
 
 - Use: npm 7+ (tested on Node.js 16)
-- Run: `npm run reset` (or `rm -rf node_modules package-lock.json && npm i --before=2021-10-09T20:46:00.000Z`)
+- Run: `npm run reset` (or `rm -rf node_modules package-lock.json`)
+- Run: `npm i --before=2021-10-09T20:46:00.000Z`
 - Run: `npm run lint` - linter should pass
-- Run: `npm run reset` (or `rm -rf node_modules package-lock.json && npm i --before=2021-10-09T20:47:00.000Z`)
+- Run: `npm run reset` (or `rm -rf node_modules package-lock.json`)
+- Run: `npm i --before=2021-10-09T20:47:00.000Z`
 - Run: `npm run lint` - linter will fail like so:
 
 ```
