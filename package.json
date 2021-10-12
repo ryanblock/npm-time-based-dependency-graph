@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@architect/eslint-config": "~2.0.0",
+    "eslint": "~7.32.0"
+  },
+  "scripts": {
+    "lint": "eslint . --fix",
+    "reset": "npm cache clear --force && rm -rf node_modules package-lock.json"
+  },
+  "eslintConfig": {
+    "extends": "@architect/eslint-config"
+  }
+}
